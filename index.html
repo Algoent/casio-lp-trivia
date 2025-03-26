@@ -122,36 +122,97 @@
                   </h2>
                 </div>
                 <div class="row">
-                  <div class="form-group col-lg-12 mt-1">
+                  <div class="form-group col-lg-6 mt-1">
                     <label for="nombre"><span>*</span>Nombre:</label>
                     <input type="text" class="form-control" name="nombre" id="nombre" data-rule="required" data-msg="Ingresa tu nombre completo">
                     <div class="validate"></div>
                   </div>
 
-                  <div class="form-group col-lg-12 mt-1">
-                    <label for="apellido"><span>*</span>Apellidos:</label>
+                  <div class="form-group col-lg-6 mt-1">
+                    <label for="apellido"><span>*</span>Apellido:</label>
                     <input type="text" class="form-control" name="apellido" id="apellido" data-rule="required" data-msg="Ingresa tus Apellidos">
                     <div class="validate"></div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="form-group col-lg-12 mt-1">
-                    <label for="telefono"><span>*</span>Teléfono:</label>
-                    <input type="text" class="form-control" name="telefono" id="telefono" data-rule="required" data-msg="Ingresa tu teléfono">
+                  <div class="form-group col-lg-6 mt-1">
+                    <label for="email"><span>*</span>Correo electrónico:</label>
+                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Ingresa un email válido">
                     <div class="validate"></div>
                   </div>
 
-                  <div class="form-group col-lg-12 mt-1">
-                    <label for="estado"><span>*</span>Ciudad/Estado:</label>
-                    <input type="text" class="form-control" name="estado" id="estado" data-rule="required" data-msg="Ingresa tu Estado o Ciudad">
+                  <div class="form-group col-lg-6 mt-1">
+                    <label for="sexo"><span>*</span>Sexo:</label>
+                    <select type="text" class="form-control" name="sexo" id="sexo" data-rule="required" data-msg="Selecciona una opción">
+                      <option value="">- Selecciona -</option>
+                      <option value="Mujer">Mujer</option>
+                      <option value="Hombre">Hombre</option>
+                      <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                    </select>
                     <div class="validate"></div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-lg-12 mt-1">
-                    <label for="email"><span>*</span>Email:</label>
-                    <input type="email" class="form-control" name="email" id="email" data-rule="required" data-msg="Ingresa un email válido">
+                    <label for="estado"><span>*</span>Estado de la República:</label>
+                    <select type="text" class="form-control" name="estado" id="estado" data-rule="required" data-msg="Selecciona una opción">
+                      <option value="">- Selecciona -</option>
+                      <option value="Aguascalientes">Aguascalientes</option>
+                      <option value="Baja California">Baja California</option>
+                      <option value="Baja California Sur">Baja California Sur</option>
+                      <option value="Campeche">Campeche</option>
+                      <option value="Chiapas">Chiapas</option>
+                      <option value="Chihuahua">Chihuahua</option>
+                      <option value="CDMX">Ciudad de México</option>
+                      <option value="Coahuila">Coahuila</option>
+                      <option value="Colima">Colima</option>
+                      <option value="Durango">Durango</option>
+                      <option value="Estado de México">Estado de México</option>
+                      <option value="Guanajuato">Guanajuato</option>
+                      <option value="Guerrero">Guerrero</option>
+                      <option value="Hidalgo">Hidalgo</option>
+                      <option value="Jalisco">Jalisco</option>
+                      <option value="Michoacán">Michoacán</option>
+                      <option value="Morelos">Morelos</option>
+                      <option value="Nayarit">Nayarit</option>
+                      <option value="Nuevo León">Nuevo León</option>
+                      <option value="Oaxaca">Oaxaca</option>
+                      <option value="Puebla">Puebla</option>
+                      <option value="Querétaro">Querétaro</option>
+                      <option value="Quintana Roo">Quintana Roo</option>
+                      <option value="San Luis Potosí">San Luis Potosí</option>
+                      <option value="Sinaloa">Sinaloa</option>
+                      <option value="Sonora">Sonora</option>
+                      <option value="Tabasco">Tabasco</option>
+                      <option value="Tamaulipas">Tamaulipas</option>
+                      <option value="Tlaxcala">Tlaxcala</option>
+                      <option value="Veracruz">Veracruz</option>
+                      <option value="Yucatán">Yucatán</option>
+                      <option value="Zacatecas">Zacatecas</option>
+                    </select>
                     <div class="validate"></div>
+                  </div>
+
+                  <div class="form-group col-lg-12 mt-1">
+                    <label for="rol"><span>*</span>Rol o Actividad:</label>
+                    <select type="text" class="form-control" name="rol" id="rol" data-rule="required" data-msg="Selecciona una opción">
+                      <option value="">- Selecciona -</option>
+                      <option value="Docente">Docente</option>
+                      <option value="Padre de familia">Padre de familia</option>
+                      <option value="Estudiante">Estudiante</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-lg-12 mt-2">
+                    <div style="display: flex; justify-content: center; align-items: baseline;">
+                        <input type="radio" name="privacidad" value="Si" id="privacidad" required>
+                        <label for="privacidad" style="padding-left: 10px; font-size: 12px;">
+                             Confirmo que soy mayor de edad y acepto que mi correo forme parte de la base de datos de Casio de acuerdo con la <a href="https://www.casio.com/mx/privacy/" target="_blank">política de privacidad</a>
+                        </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -165,14 +226,7 @@
               </div>
               <div class="text-center" id="btn-next"><button type="button" onclick="myFunction()">SIGUIENTE</button></div>
               <div class="text-center" id="btn-finish" style="display:none"><button type="submit">PARTICIPAR</button></div>
-              <div class="form-group mt-3">
-                <div style="display: flex; justify-content: center; align-items: baseline;">
-                    <input type="radio" name="privacidad" value="Si" id="privacidad" required>
-                    <label for="privacidad" style="padding-left: 10px; font-size: 12px;">
-                         Al participar en este giveaway se acepta el aviso de privacidad y uso de datos personales. Consulta términos y condiciones.
-                    </label>
-                </div>
-              </div>
+              
             </form>
             <a href="https://www.casio.com/mx/terminos-y-condiciones/" target="_blank">Consulta términos y condiciones</a>
             <a href="https://www.casio.com/mx/privacy/" target="_blank">Aviso de privacidad</a>
